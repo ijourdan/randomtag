@@ -76,7 +76,8 @@ def plt_data_2d(data,data_tags):
     for i in range(data_tags.max().item()+1):
         index = data_tags == i
         plt.plot(data[index,0],data[index,1], '*' ,color=TABLEAU_COLORS[keys[i]])
-
+    plt.show()
+    
 # Scheduler not used
 def lr_schedule(epoch):
     """

@@ -19,11 +19,11 @@ from utils import plt_data_2d
 # PARAMETERS
 # Corpus
 quant_tag = 4
-quant_data = 1000
+quant_data = 100
 dimension = 2
 test_proportion = 0.2
 gap=6
-learning_rate = 0.0001
+learning_rate = 0.001
 
 # Shuffled tags
 shuffle_probability = 0.9
@@ -108,6 +108,7 @@ with torch.no_grad():
     #print('Test Accuracy of the model on the 10000 test images: {} %'.format(100 * correct / total))
 
 plt_data_2d(test,net_output)
+plt.show()
 #%%
 
 
